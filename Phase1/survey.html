@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="surveystyles.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">
+    Survey form for certification project!
+  </p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name:
+        <input id="name" name="name" type="text" placeholder="e.g. John Doe" required /></label>
+      <label id="email-label" for="email">Email: <input id="email" name="email" type="email"
+          placeholder="xyz@domain.com" required /></label>
+      <label id="number-label" for="number">Number between 5 and 500: <input id="number" type="number" name="age"
+          min="5" max="500" placeholder="50" /></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Role:
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Student</option>
+          <option value="2">Employee</option>
+        </select>
+    </fieldset>
+    <fieldset>
+      <legend>Like FreeCodeCamp?</legend>
+      <label for="yes"><input id="yes" type="radio" name="answer" value="yes" class="inline" checked /> Yes</label>
+      <label for="no"><input id="no" type="radio" name="answer" value="no" class="inline" /> No</label>
+    </fieldset>
+    <fieldset>
+      <legend>select what you have learned</legend>
+      <label for="html"> <input class="input-checkboxes" id="html" type="checkbox" name="learn" value="html">
+        HTML</label>
+      <label for="css"> <input class="input-checkboxes" id="css" type="checkbox" name="learn" value="css"> CSS </label>
+      <label for="patience"><input class="input-checkboxes" id="patience" type="checkbox" name="learn"
+          value="patience">Patience </label>
+    </fieldset>
+    <label for="comments">comments:
+      <textarea id="comments" name="comments" rows="3" cols="30"
+        placeholder="Space for additional comments!"></textarea>
+    </label>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+
+</html>
