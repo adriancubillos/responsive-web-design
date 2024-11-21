@@ -1,0 +1,69 @@
+<!-- The ::before selector creates a pseudo-element which is the first child of the selected element, 
+ while the ::after selector creates a pseudo-element which is the last child of the selected element. 
+ These pseudo-elements are often used to create cosmetic content, which you will see later in this project. -->
+
+<!-- The content property is used to set or override the content of the element. By default, 
+  the pseudo-elements created by the ::before and ::after pseudo-selectors are empty, and the 
+  elements will not be rendered to the page. Setting the content property to an empty string "" 
+  will ensure the element is rendered to the page while still being empty. -->
+
+<!-- The @media at-rule, also known as a media query, is used to conditionally apply CSS. Media queries are commonly used to apply CSS based on the viewport width using the max-width and min-width properties.
+
+In the below example the padding is applied to the .card class when the viewport is 960px wide and below.
+Example Code
+
+@media (max-width: 960px) {
+  .card {
+    padding: 2rem;
+  }
+} -->
+<!-- Logical operators can be used to construct more complex media queries. The and logical operator is used to query two media conditions.
+
+ For example, a media query that targets a display width between 500px and 1000px would be:
+Example Code
+
+@media (min-width: 500px) and (max-width: 1000px){
+} -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Piano</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./piano-styles.css">
+</head>
+
+<body>
+  <div id="piano">
+    <img class="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" />
+    <div class="keys">
+      <div class="key"></div>
+      <div class="key black--key"></div>
+      <div class="key black--key"></div>
+      <div class="key"></div>
+      <div class="key black--key"></div>
+      <div class="key black--key"></div>
+      <div class="key black--key"></div>
+
+      <div class="key"></div>
+      <div class="key black--key"></div>
+      <div class="key black--key"></div>
+      <div class="key"></div>
+      <div class="key black--key"></div>
+      <div class="key black--key"></div>
+      <div class="key black--key"></div>
+
+      <div class="key"></div>
+      <div class="key black--key"></div>
+      <div class="key black--key"></div>
+      <div class="key"></div>
+      <div class="key black--key"></div>
+      <div class="key black--key"></div>
+      <div class="key black--key"></div>
+    </div>
+  </div>
+</body>
+
+</html>
