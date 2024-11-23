@@ -130,3 +130,43 @@ figcaption {
   color: #666;
   margin-top: 10px;
 }
+
+/* Syntax highlighting */
+code .keyword {
+  color: #0000FF;
+  font-weight: bold;
+}
+
+code .type {
+  color: #008000;
+  font-weight: bold;
+}
+
+code .builtIn {
+  color: #0000FF;
+}
+
+code .string {
+  color: #A31515;
+}
+
+code .comment {
+  color: #767a76;
+  font-style: italic;
+}
+
+code .method {
+  color: #aa3a06;
+}
+
+code .number {
+  color: #09885A;
+}
+
+code .punctuation {
+  color: #000000;
+}
+
+code .operator {
+  color: #000000;
+}
