@@ -290,7 +290,30 @@ body {
   }
 
   .sky {
-    background: radial-gradient(closest-corner circle at 15% 15%,
+    background: radial-gradient(closest-corner circle at 85% 15%,
+        #ccc,
+        #ccc 20%,
+        #445 21%,
+        #223 100%);
+  }
+}
+
+@media(max-width: 999px) and (min-width: 680px) {
+
+
+  :root {
+    --building-color1: #000;
+    --building-color2: #000;
+    --building-color3: #000;
+    --building-color4: #000;
+    --window-color1: #bb99ff;
+    --window-color2: #8cd9b3;
+    --window-color3: #d98cb3;
+    --window-color4: #8cb3d9;
+  }
+
+  .sky {
+    background: radial-gradient(closest-corner circle at 45% 15%,
         #ccc,
         #ccc 20%,
         #445 21%,
