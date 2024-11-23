@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technnical Documentation Project</title>
+  <link rel="stylesheet" href="project-documentation-page-styles.css" />
+
+
+
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>JS Documentation</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
+    <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+    <a href="#Hello_world" class="nav-link">Hello world</a>
+    <a href="#Variables" class="nav-link">Variables</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language.
+        Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its
+        environment to provide programmatic control over them.</p>
+      <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language
+        elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of
+        purposes by supplementing it with additional objects; for example:</p>
+      <ul>
+        <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document
+          Object Model (DOM).</li>
+        <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a
+          server.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="What_you_should_already_know">
+      <header>What you should already know</header>
+      <p>This guide assumes you have the following basic background:</p>
+      <ul>
+        <li>
+          <p>A general understanding of the Internet and the World Wide Web (WWW).</p>
+        </li>
+        <li>
+          <p>Good working knowledge of HyperText Markup Language (HTML).</p>
+        </li>
+        <li>
+          <p>Some programming experience. If you are new to programming, try one of the tutorials linked on the main
+            page
+            about JavaScript.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>JavaScript and Java</header>
+
+      <ul>
+        <li><strong>Purpose:</strong>
+          <ul>
+            <li><span class="java">Java</span>: A general-purpose, object-oriented programming language used for
+              developing a wide range of applications, including:
+              <ul>
+                <li>Android apps</li>
+                <li>Enterprise software</li>
+                <li>Desktop applications</li>
+                <li>Web servers</li>
+              </ul>
+            </li>
+            <li><span class="javascript">JavaScript</span>: A scripting language primarily used for adding interactivity
+              and dynamic behavior to web pages. It's also increasingly used for:
+              <ul>
+                <li>Building web applications (with frameworks like React, Angular, Vue)</li>
+                <li>Server-side development (with Node.js)</li>
+                <li>Game development</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><strong>Execution:</strong>
+          <ul>
+            <li><span class="java">Java</span>: Compiled language, meaning the code is translated into bytecode before
+              execution by the Java Virtual Machine (JVM).</li>
+            <li><span class="javascript">JavaScript</span>: Interpreted language, meaning the code is executed directly
+              by the browser or other runtime environment without prior compilation.</li>
+          </ul>
+        </li>
+        <li><strong>Typing:</strong>
+          <ul>
+            <li><span class="java">Java</span>: Statically typed, meaning the data types of variables must be declared
+              explicitly and checked at compile time.</li>
+            <code>
+                // Declaring a variable of type int
+                int age = 25;
+                </code>
+            <br /> <code>
+            // Declaring a variable of type String
+            String name = "John Doe";
+            </code>
+            <br />
+            <code>
+// Declaring a variable of type boolean
+boolean isStudent = true;
+              </code>
+            <li><span class="javascript">JavaScript</span>: Dynamically typed, meaning the data types of variables are
+              determined at runtime and can change during execution.</li>
+            <code>// Declaring a variable using the 'var' keyword
+var age = 25;
+</code>
+            <br />
+            <code>
+// Declaring a variable using the 'let' keyword
+let name = "John Doe";
+</code>
+            <br />
+            <code>
+
+  // Declaring a variable using the 'const' keyword (for constants)
+  const PI = 3.14159;
+</code>
+          </ul>
+        </li>
+        <li><strong>Syntax:</strong>
+          <ul>
+            <li><span class="java">Java</span>: Syntax is similar to C++ and other traditional object-oriented
+              languages.</li>
+            <li><span class="javascript">JavaScript</span>: Syntax is influenced by C, but also has features like
+              first-class functions and prototypal inheritance.</li>
+          </ul>
+        </li>
+        <li><strong>Ecosystem:</strong>
+          <ul>
+            <li><span class="java">Java</span>: Robust ecosystem with a vast collection of libraries, frameworks, and
+              tools.</li>
+            <li><span class="javascript">JavaScript</span>: Vibrant and rapidly evolving ecosystem with a focus on web
+              development.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- code tag beautified -->
+
+      <div class="code-container">
+        <div class="code-block java">
+          <div class="code-header">Java</div>
+          <pre><code>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+    </code></pre>
+        </div>
+
+        <div class="code-block javascript">
+          <div class="code-header">JavaScript</div>
+          <pre><code>
+console.log("Hello, World!");
+    </code></pre>
+        </div>
+
+        <figcaption>Sample of both Java and JavaScript</figcaption>
+      </div>
+
+
+    </section>
+
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+      </p>
+      <div class="code-block javascript">
+        <div class="code-header">JavaScript</div>
+        <pre><code>
+          function greetWorld() {
+              console.log("Hello, World!");
+          }
+          
+          greetWorld();
+      </code>
+    </pre>
+      </div>
+      <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers,
+        conform to certain rules.</p>
+      <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can
+        also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z"
+        (uppercase) and the characters "a" through "z" (lowercase).</p>
+      <code>
+          var x = 42;
+          let y = 'Hello';
+          const Z = true;
+      </code>
+      <p>You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode
+        escape sequences as characters in identifiers.</p>
+      <p>Some examples of legal names are Number_hits, temp99, and _name.</p>
+    </section>
+  </main>
+</body>
+
+</html>
